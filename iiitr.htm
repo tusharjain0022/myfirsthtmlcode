@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-/* <meta name="viewport" content="width=device-width, initial-scale=1.0">*/
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+
  #p01 {
   color: black;
   background-color:lightblue;
   font-size: 250%;
- allign-text:center;}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
+ allign-text:center;
+  padding:20px;}
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color:#e5e5e5;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
 }
 
-li {
-  float: left;
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111111;
-}
 </style>
 </head>
 <body>
@@ -39,19 +55,17 @@ li a:hover {
   Indian Institute Of Information 
      Technology, Ranchi</pre>
 
-<ul>
-  <li><a href="#link">Real site</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#timetable">Timetable</a></li>
-</ul>
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="http://iiitranchi.ac.in/">Real site Link</a>
+    <a href="#2">Gallery</a>
+    <a href="#3">Timetable</a>
+    <a href="#4">Announcements</a>
+  </div>
 
-<h2>IMAGES <h2>
-<img src="1.jpg" alt="1" style="width:400px;height:400px;">
-<img src="2.jpg" alt="2" style="width:400px;height:400px;">
-<img src="3.jpg" alt="3" style="width:400px;height:400px;"><br>
-<h2 id='about'>ABOUT</h2>
-<pre>Indian Institute of Information Technology Ranchi is an autonomous institute setup by the MHRD, Government of India, and Government of
+  <div class="main">
+    <h2>ABOUT</h2>
+    <p>Indian Institute of Information Technology Ranchi is an autonomous institute setup by the MHRD, Government of India, and Government of
  Jharkhand along with the industry partners Tata Motors, TCS and CCL on a Public Private Partnership.
 
 MHRD, Government of India has taken up the initiative to setup 20 new Indian Institutes of Information Technology (IIITs) on a Public Private
@@ -72,10 +86,23 @@ competitiveness of key sectors of the Indian economy and industry.
 Now (2016-17), IIIT Ranchi is offering two Under Graduate Programmes, B. Tech (Honours) Computer Science and Engineering and B. Tech
  (Honours) Electronics and Communications Engineering.
 
-IIIT Ranchi is committed to academic excellence and good governance.</pre>
+IIIT Ranchi is committed to academic excellence and good governance.</p>
+  </div>
 
-<h2 id='link'>IIIT RANCHI </h2>
-<a href='http://iiitranchi.ac.in/'> IIITR real site link </a><br>
+  <div class="right">
+    <h2>Contact</h2>
+    <p>ph-7982250655</p>
+    <h2>Location</h2>
+    <p>Namkun,Ranchi</p>
+   
+  </div>
+</div>
 
+<h2 id='2'>IMAGES <h2>
+<img src="1.jpg" alt="1" style="width:400px;height:400px;">
+<img src="2.jpg" alt="2" style="width:400px;height:400px;">
+<img src="3.jpg" alt="3" style="width:400px;height:400px;"><br>
+
+<div  style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright tusharjain0022@gmail.com</div>
 </body>
 </html>
