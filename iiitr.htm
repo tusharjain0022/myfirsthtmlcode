@@ -3,6 +3,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+#background{background-image: url('1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;}
 
  .p01 {
   color: black;
@@ -19,7 +23,7 @@
   text-align:center;
 }
 .menu a {
-  background-color:#e5e5e5;
+  background-color:lightblue;
   padding:8px;
   margin-top:7px;
   display:block;
@@ -27,31 +31,51 @@
   color:black;
 }
 .main {
+   background-color:white;
   float:left;
   width:60%;
   padding:0 20px;
 }
 .right {
-  background-color:#e5e5e5;
+  background-color:lightblue;
   float:left;
   width:20%;
   padding:15px;
   margin-top:7px;
   text-align:center;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#fixedbuttondown {
+    position: fixed;
+    bottom: 10px;
+    right: 10px; 
+}
+
+#fixedbuttonup {
+    position: fixed;
+    bottom: 80px;
+    right: 10px; 
+}
 
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
   .menu, .main, .right ,.p01{
     width:100%;
+    
   }
 }
 
 </style>
 </head>
-<body>
-
-<p class=p01><img src="iiitrlogo.gif" alt="IIITR Logo" style="float:left;width:150px;height:120px;background-color:lightblue;padding:0px;">
+<body  id="background">
+<a href="#down"><img src="down.png" id="fixedbuttondown" style="width:50px;height:50px;"></a>
+<a href="#up"><img src="up.png" id="fixedbuttonup" style="width:50px;height:50px;"></a>
+<p class=p01 id="up"><img src="iiitrlogo.gif" alt="IIITR Logo" style="float:left;width:150px;height:120px;background-color:lightblue;padding:0px;">
 <br>
   Indian Institute Of Information 
      Technology, Ranchi</p>
@@ -65,6 +89,7 @@
   </div>
 
   <div class="main">
+  
     <h2>ABOUT</h2>
     <p>Indian Institute of Information Technology Ranchi is an autonomous institute setup by the MHRD, Government of India, and Government of
  Jharkhand along with the industry partners Tata Motors, TCS and CCL on a Public Private Partnership.
@@ -90,6 +115,7 @@ Now (2016-17), IIIT Ranchi is offering two Under Graduate Programmes, B. Tech (H
 IIIT Ranchi is committed to academic excellence and good governance.</p>
   </div>
 
+
   <div class="right">
     <h2>Contact</h2>
     <p>ph-7982250655</p>
@@ -100,16 +126,20 @@ IIIT Ranchi is committed to academic excellence and good governance.</p>
   </div>
 </div>
 
-<h2 id='2'>IMAGES <h2>
+<h2 id='2' style=" background-color:lightblue;padding:10px;text-align:center;">IMAGES <h2>
 <img src="1.jpg" alt="1" style="width:400px;height:400px;">
 <img src="2.jpg" alt="2" style="width:400px;height:400px;">
 <img src="3.jpg" alt="3" style="width:400px;height:400px;"><br>
 <br>
-<h2 id='3'> Timetable-2k19 Batch</h2>
-<a href="tt.pdf" download >download link</a><br><br><br>
-<img src='tt1.jpg' alt="timetable for ece" style="width:900px;height:700px;"><br><br><br>
-<img src='tt2.jpg' alt="timetable for cse" style="width:900px;height:700px;">
+<div style=" background-color:lightblue;text-align:center;">
+<h3 id='3' > Timetable-2k19 Batch</h3>
+<a href="tt.pdf" download >download link</a>
+</div>
+<img src='tt1.jpg' alt="timetable for ece" class="center" style="width:auto;height:700px;padding:20px;">
+<img src='tt2.jpg' alt="timetable for cse" class="center" style="width:auto;height:700px;padding:20px;">
+<h2 id='4' class="center" style=" background-color:lightblue;padding:10px;text-align:center;">Announcements <h2>
+<iframe src="announcement.html" class="center" style="background-color:white;height:400px; width:800px"></iframe>
 
-<div  style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright tusharjain0022@gmail.com</div>
+<div id="down"  style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright tusharjain0022@gmail.com</div>
 </body>
 </html>
